@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+* li {
+  list-style: none;
+  cursor: pointer;
+}
+
+* a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+* button {
+  cursor: pointer;
+}
+
+* i {
+  cursor: pointer;
+}
+
+* img {
+  cursor: pointer;
+}
+
+nav {
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+  z-index: 999;
+  background: white;
+}
+nav .container .nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 80;
+}
+nav .container .nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+nav .container .nav ul li a {
+  color: #222;
+  font-size: 18px;
+  transition: all 0.5s ease;
+}
+nav .container .nav ul li a:hover {
+  color: #2845ba;
+}
+nav .container .nav button {
+  background-color: #2845ba;
+  color: white;
+  padding: 16px 23px;
+  border: 1px solid #2845ba;
+  font-size: 18px;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+  font-weight: 800;
+}
+nav .container .nav button:hover {
+  color: #2845ba;
+  background-color: white;
+  border: 1px solid #2845ba;
+}
+nav .container .nav i {
+  font-size: 35px;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav .container .nav button {
+    display: none;
+  }
+  nav .container .nav ul {
+    display: none;
+  }
+  nav .container .nav i {
+    display: block;
+  }
+}
+.nav-menu {
+  width: 100%;
+  position: fixed;
+  top: -500px;
+  z-index: 9;
+  left: 0;
+  padding: 30px 0;
+  transition: all 1s ease;
+  background-color: #222;
+}
+.nav-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.nav-menu ul a {
+  font-size: 14px;
+  color: white;
+  transition: all 0.2s ease;
+}
+.nav-menu ul a:hover {
+  color: #2845ba;
+}
+
+.section1 {
+  width: 100%;
+  padding: 50px;
+}/*# sourceMappingURL=style.css.map */
