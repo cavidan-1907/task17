@@ -7,7 +7,7 @@
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   padding: 0 32px;
@@ -40,6 +40,7 @@ nav {
   padding: 20px 0;
   position: relative;
   z-index: 999;
+  position: fixed;
   background: white;
 }
 nav .container .nav {
@@ -119,7 +120,81 @@ nav .container .nav i {
   color: #2845ba;
 }
 
-.section1 {
+.section2 {
+  padding: 50px 0;
+}
+.section2 .container .section21 {
   width: 100%;
-  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.section2 .container .section21 .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+.section2 .container .section21 .top h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.section2 .container .section21 .top span {
+  color: gray;
+  font-size: 15px;
+}
+.section2 .container .section21 .bottom, .section2 .container .section21 .botom1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  gap: 25px;
+}
+.section2 .container .section21 .bottom .card, .section2 .container .section21 .botom1 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: rgba(0, 136, 248, 0.1);
+  padding: 30px 20px;
+  gap: 20px;
+  transition: all 0.5s ease;
+}
+.section2 .container .section21 .bottom .card .image img, .section2 .container .section21 .botom1 .card .image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+.section2 .container .section21 .bottom .card:hover, .section2 .container .section21 .botom1 .card:hover {
+  background: rgba(227, 113, 6, 0.15);
+}
+.section2 .container .section21 .bottom .card i, .section2 .container .section21 .botom1 .card i {
+  color: rgb(169, 75, 17);
+}
+.section2 .container button {
+  background-color: #2845ba;
+  color: white;
+  padding: 16px 23px;
+  border: 1px solid #2845ba;
+  font-size: 18px;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+  font-weight: 800;
+}
+.section2 .container button:hover {
+  color: #2845ba;
+  background-color: white;
+  border: 1px solid #2845ba;
+}
+
+@media screen and (max-width: 991px) {
+  .section2 .container .section21 .botom1, .section2 .container .section21 .bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */

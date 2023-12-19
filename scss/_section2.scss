@@ -1,0 +1,97 @@
+.section2{
+    padding: 50px 0;
+    .container{
+        .section21{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px; 
+            .top{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                gap: 10px; 
+                h1 {
+                    font-size: 35px;
+                    font-weight: 500;
+                }
+    
+                span {
+                    color: gray;
+                    font-size: 15px;
+                }
+            }
+            .bottom,.botom1{
+
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                padding: 20px;
+                gap: 25px;
+                .card{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
+                    background: rgba(0, 136, 248, 0.1);
+                    padding: 30px 20px;
+                    gap: 20px;
+                    transition: all .5s ease;
+                    .image{
+                    
+                        img{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 999px;
+                            object-fit: cover;
+                        }
+                    }
+               
+                    &:hover {
+                        background: rgba(227, 113, 6, 0.15);
+                    }
+                    i{
+                    color:rgb(169, 75, 17);
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        button{
+            background-color:#2845ba;
+            color: white;
+            padding:16px 23px;
+            border: 1px solid #2845ba;
+            font-size: 18px;
+            border-radius: 6px;
+            transition: all 0.5s ease;
+            font-weight: 800;
+            &:hover{
+                color:#2845ba;
+                background-color:white;
+                border: 1px solid #2845ba;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px){
+    .section2{
+        .container{
+            .section21{
+.botom1,.bottom{
+    grid-template-columns:repeat( 2,1fr);
+}
+            }
+        }
+    }
+    
+}
