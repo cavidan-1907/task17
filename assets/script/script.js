@@ -23,8 +23,12 @@ let favorites = 'http://localhost:3000/favorites/'
 
 let bottom=document.querySelector(".bottom")
 
+let page=1;
+
+let loadBtn=document.querySelector(".load")
+
 function showData(){
-fetch(data)
+fetch(`${data}?_page=${page}&_limit=3`)
 .then(response=>response.json())
 .then(data=>{
   console.log(data);
@@ -49,6 +53,11 @@ fetch(data)
 })
 }
 showData();
+loadBtn.addEventListener("click", () => {
+  page++;
+  showData()
+})
+
 
 function deleteCard(id) {
   axios.delete(`http://localhost:3000/data/${id}`);

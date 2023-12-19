@@ -51,11 +51,20 @@ input{
 
 
 #submit{
-    background-color: #fc5a1a;
-    padding:6px 6px;
-    border: none;
+
+    background-color:#2845ba;
     color: white;
-    font-weight: 500;
-    font-size: 16px;
-    border-radius: 12px;
-}
+    padding:8px 30px;
+    border: 1px solid #2845ba;
+    font-size: 18px;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+    font-weight: 800;
+  
+  } 
+  #submit:hover{
+    color:#2845ba;
+    background-color:white;
+    border: 1px solid #2845ba;
+  
+  }
